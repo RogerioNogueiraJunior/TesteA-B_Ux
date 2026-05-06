@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveElite - Locação de Veículos</title>
+    <link rel="stylesheet" href="styleb.css">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PHKFTDHN');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHKFTDHN"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header>
+        <h1>Drive<span>Elite</span></h1>
+        <p>Escolha o veículo ideal para sua jornada</p>
+    </header>
+
+    <main class="container">
+        <!-- Categoria: Dia a Dia -->
+        <section class="category">
+            <h2>Carros do Dia a Dia</h2>
+            <div class="carousel-container">
+                <button type="button" class="prev" onclick="moveSlide(0, -1)">&#10094;</button>
+                <div class="carousel" id="carousel-daily">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=300&q=80" alt="Carro Popular">
+                        <h3>Compacto Confort</h3>
+                        <p>Econômico e ágil para a cidade.</p>
+                        <button class="btn-rent">Alugar Agora</button>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=300&q=80" alt="SUV Familiar">
+                        <h3>SUV Family</h3>
+                        <p>Espaço de sobra para toda a família.</p>
+                        <button class="btn-rent">Alugar Agora</button>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=300&q=80" alt="Sedan">
+                        <h3>Executive Sedan</h3>
+                        <p>Elegância e conforto para viagens.</p>
+                        <button class="btn-rent">Alugar Agora</button>
+                    </div>
+                        <div class="card">
+                        <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=300&q=80" alt="Sedan">
+                        <h3>Executive Sedan</h3>
+                        <p>Elegância e conforto para viagens.</p>
+                        <button class="btn-rent">Alugar Agora</button>
+                    </div>
+                        <div class="card">
+                        <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=300&q=80" alt="Sedan">
+                        <h3>Executive Sedan</h3>
+                        <p>Elegância e conforto para viagens.</p>
+                        <button class="btn-rent">Alugar Agora</button>
+                    </div>
+                </div>
+                <button type="button" class="next" onclick="moveSlide(0, 1)">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- Categoria: Esportivos -->
+        <section class="category">
+            <h2>Carros Esportivos</h2>
+            <div class="carousel-container">
+                <button type="button" class="prev" onclick="moveSlide(1, -1)">&#10094;</button>
+                <div class="carousel" id="carousel-sports">
+                    <div class="card sport">
+                        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=300&q=80" alt="Esportivo Alemao">
+                        <h3>GT Performance</h3>
+                        <p>Velocidade e precisão nas pistas.</p>
+                        <button class="btn-rent">Alugar Agora</button>
+                    </div>
+                    <div class="card sport">
+                        <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Supercarro">
+                        <h3>Super Sprint</h3>
+                        <p>O auge da engenharia automotiva.</p>
+                        <button class="btn-rent">Alugar Agora</button>
+                    </div>
+                    <div class="card sport">
+                        <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=300&q=80" alt="Conversivel">
+                        <h3>Spider V8</h3>
+                        <p>Sinta a liberdade do vento.</p>
+                        <button class="btn-rent">Alugar Agora</button>
+                    </div>
+                </div>
+                <button type="button" class="next" onclick="moveSlide(1, 1)">&#10095;</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="scriptb.js" defer></script>
+    <script>document.addEventListener('DOMContentLoaded', initCarousels);</script>
+</body>
+</html>

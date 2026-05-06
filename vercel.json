@@ -3,7 +3,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "middlewarePath": "middleware",
+      "middlewarePath": "middleware.mjs",
       "continue": true
     }
   ]

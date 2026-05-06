@@ -1,0 +1,21 @@
+{
+  "name": "testea-b_ux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "middleware.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RogerioNogueiraJunior/TesteA-B_Ux.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/RogerioNogueiraJunior/TesteA-B_Ux/issues"
+  },
+  "homepage": "https://github.com/RogerioNogueiraJunior/TesteA-B_Ux#readme"
+}

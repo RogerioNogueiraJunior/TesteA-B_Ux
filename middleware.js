@@ -15,11 +15,17 @@ export default function middleware(req) {
 
     // Se for a versão B, faz o "rewrite" (mostra a v2 sem mudar a URL)
     if (version === 'version-b') {
-      url.pathname = '/v2.html';
-      const response = fetch(url); // Busca o conteúdo da v2
+      const newUrl = new URL('/v2.html', req.url);
+      const response = next();
+      
       // Define o cookie para o usuário não mudar de versão depois
-      response.then(res => res.headers.set('Set-Cookie', `${cookieName}=${version}; Path=/`));
-      return response;
+      response.headers.set('Set-Cookie', `${cookieName}=${version}; Path=/; Max-Age=31536000`);
+      
+      // Reescreve a URL interna
+      return new Response(fetch(newUrl.toString()).then(r => r.body), {
+        status: response.status,
+        headers: response.headers,
+      });
     }
   }
 

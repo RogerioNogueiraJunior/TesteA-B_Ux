@@ -2,8 +2,8 @@
   "version": 2,
   "routes": [
     {
-      "src": "/middleware",
-      "middlewarePath": "middleware.mjs",
+      "src": "/(.*)",
+      "middlewarePath": "/middleware.mjs",
       "continue": true
     }
   ]
